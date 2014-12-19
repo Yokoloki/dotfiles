@@ -1,4 +1,4 @@
-"View
+" View
 set nu 
 set ru 
 set cursorline 
@@ -8,22 +8,22 @@ set t_Co=256
 set colorcolumn=80
 set showmatch
 
-"Encoding
+" Encoding
 set encoding=utf-8
 set fileencodings=utf-8,gb2312,gb18030,gbk,ucs-bom,cp936,latin1
 set termencoding=utf-8
 
-"Color Scheme
+" Color Scheme
 if isdirectory(expand("$HOME/.vim/colors")) 
     set background=dark
     color solarized
 endif
 
-"WildMenu
+" WildMenu
 set wildmenu 
 set wildignore=*.o,*~,*.pyc
 
-"Editor
+" Editor
 set et 
 set autoindent
 set nobackup 
@@ -32,13 +32,13 @@ set sw=4 sts=4 ts=4
 filetype plugin indent on
 syntax on
 
-"Search
+" Search
 set incsearch
 set hlsearch
 set ignorecase
 set smartcase
 
-"NMap
+" NMap
 let mapleader=","
 nmap <cr> :nohlsearch<cr>
 nmap <Leader><Leader> :NERDTreeToggle<cr>
@@ -49,26 +49,28 @@ nmap <C-H> <C-W>h
 nmap <C-L> <C-W>l
 nmap <F5> :PyFlake<cr>
 
-"Bundle
+" Bundle
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
-"Bundle List
+" Bundle List
 Bundle 'gmarik/vundle'
-Bundle 'scrooloose/syntastic'
 Bundle 'bling/vim-airline'
 Bundle 'scrooloose/nerdtree'
 Bundle 'majutsushi/tagbar'
-Bundle 'davidhalter/jedi-vim'
 Bundle 'andviro/flake8-vim'
 Bundle 'altercation/vim-colors-solarized'
+" Bundle 'scrooloose/syntastic'
 
-"NerdTree
+" Airline
+let g:airline#extensions#tabline#enabled = 1
+
+" NerdTree
 let NERDTreeIgnore = ['\.o$','\.so','\.pyc$']
 
-"Jedi
-let g:jedi#use_tabs_not_buffers = 0
+" Flake8
+let g:PyFlakeOnWrite = 0
 
-"Sytastic
-let g:syntastic_cpp_compiler = 'clang++'
-let g:syntastic_cpp_compiler_options = ' -std=c++11 -stdlib=libc++'
+" Sytastic
+" let g:syntastic_cpp_compiler = 'clang++'
+" let g:syntastic_cpp_compiler_options = ' -std=c++11 -stdlib=libc++'
