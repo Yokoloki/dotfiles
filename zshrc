@@ -1,6 +1,8 @@
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 export TERM=xterm-256color
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
@@ -75,6 +77,16 @@ export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/g
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
+stty -ixon
+
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias findcpp="find . -name '*.cpp'|xargs grep -A3 -B1 -n --color"
+alias findh="find . -name '*.h'|xargs grep -A3 -B1 -n --color"
+alias findpy="find . -name '*.py'|xargs grep -A3 -B1 -n --color"
+alias xtmux="tmux attach -t work"
+alias xps="ps aux | grep 3031"
+alias ll="ls -lah"
+alias restart="python /home/gzshenjunfeng/zmhd/trunk/tools/service_manager.py restart"
+alias stop="python /home/gzshenjunfeng/zmhd/trunk/tools/service_manager.py stop"
