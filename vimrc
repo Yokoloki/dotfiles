@@ -29,15 +29,20 @@ set nobackup
 set noswapfile 
 set noexpandtab
 set sw=4 sts=4 ts=4
-set autoindent
-set cindent
-filetype on
+filetype indent on
 syntax on
+
+" Folding
+set foldmethod=indent
+set foldlevelstart=20
 
 " Search
 set incsearch
 set hlsearch
 set smartcase
+
+" YCM
+set completeopt-=preview
 
 " Buffer
 nmap <Tab> :bn<cr>
@@ -96,6 +101,8 @@ Bundle 'majutsushi/tagbar'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'kien/ctrlp.vim'
 Bundle 'jiangmiao/auto-pairs'
+Bundle 'tmhedberg/SimpylFold'
+Bundle 'Valloric/YouCompleteMe'
 " Bundle 'andviro/flake8-vim'
 " Bundle 'scrooloose/syntastic'
 
