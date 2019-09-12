@@ -19,6 +19,7 @@ vim: vundle
 	vim -c 'execute "BundleInstall" | q | q'
 	mkdir -p ~/.vim/colors
 	ln -fs ~/.vim/bundle/vim-colors-solarized/colors/solarized.vim ~/.vim/colors/solarized.vim
+	ln -fs ~/.vim/bundle/vim-solarized8/colors/solarized8.vim ~/.vim/colors/solarized8.vim
 
 tmux:
 	mkdir -p ~/.tmux

@@ -14,10 +14,10 @@ set fileencodings=utf-8,gb2312,gb18030,gbk,ucs-bom,cp936,latin1
 set termencoding=utf-8
 
 " Color Scheme
-" if isdirectory(expand("$HOME/.vim/colors")) 
-"     set background=dark
-"     color solarized
-" endif
+if isdirectory(expand("$HOME/.vim/colors")) 
+    set background=dark
+    color solarized8
+endif
 
 " WildMenu
 set wildmenu 
@@ -99,6 +99,7 @@ Bundle 'bling/vim-airline'
 Bundle 'scrooloose/nerdtree'
 Bundle 'majutsushi/tagbar'
 Bundle 'altercation/vim-colors-solarized'
+Bundle 'lifepillar/vim-solarized8'
 Bundle 'kien/ctrlp.vim'
 Bundle 'jiangmiao/auto-pairs'
 Bundle 'tmhedberg/SimpylFold'
@@ -118,3 +119,4 @@ let NERDTreeIgnore = ['\.o$','\.so','\.pyc$']
 " Sytastic
 " let g:syntastic_cpp_compiler = 'clang++'
 " let g:syntastic_cpp_compiler_options = ' -std=c++11 -stdlib=libc++'
+
