@@ -103,7 +103,7 @@ Bundle 'lifepillar/vim-solarized8'
 Bundle 'kien/ctrlp.vim'
 Bundle 'jiangmiao/auto-pairs'
 Bundle 'tmhedberg/SimpylFold'
-Bundle 'Valloric/YouCompleteMe'
+" Bundle 'Valloric/YouCompleteMe'
 " Bundle 'andviro/flake8-vim'
 " Bundle 'scrooloose/syntastic'
 
