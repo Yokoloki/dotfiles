@@ -82,8 +82,3 @@ stty -ixon
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias findcpp="find . -name '*.cpp'|xargs grep -A3 -B1 -n --color"
-alias findh="find . -name '*.h'|xargs grep -A3 -B1 -n --color"
-alias findpy="find . -name '*.py'|xargs grep -A3 -B1 -n --color"
-alias xps="ps aux | grep gzshen"
-alias ll="ls -lah"
